@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">MusicSchool</string>
 
+    <string name="choose_note">Choose note : </string>
+    <string name="choose_scale">Choose Scale : </string>
+    <string name="choose_no_of_notes">Select No. of notes to play : </string>
+
     <string-array name="notes">
         <item> C </item>
         <item> Db </item>
@@ -15,4 +19,6 @@
         <item> Bb </item>
         <item> B </item>
     </string-array>
+
+
 </resources>

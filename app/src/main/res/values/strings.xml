@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MusicSchool</string>
+
+    <string-array name="notes">
+        <item> C </item>
+        <item> Db </item>
+        <item> D </item>
+        <item> Eb </item>
+        <item> E </item>
+        <item> F </item>
+        <item> Gb </item>
+        <item> G </item>
+        <item> Ab </item>
+        <item> A </item>
+        <item> Bb </item>
+        <item> B </item>
+    </string-array>
+</resources>

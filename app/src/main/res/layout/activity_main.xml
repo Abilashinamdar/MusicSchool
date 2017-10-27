@@ -3,6 +3,7 @@
     android:id="@+id/layoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     android:orientation="vertical">
 
     <TextView
@@ -55,6 +56,45 @@
         android:layout_margin="10dp"
         android:text="Play" />
 
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/buttonRepeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Repeat" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/buttonCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Check" />
+
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textNoOfNotes"
         android:layout_width="wrap_content"
@@ -72,9 +112,23 @@
         android:layout_margin="10dp"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/textNoOfNotes"
-        android:orientation="horizontal">
+        android:orientation="horizontal"></NumberPicker>
 
-    </NumberPicker>
+    <TextView
+        android:id="@+id/tempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNoOfNotes"
+        android:layout_marginLeft="10dp"
+        android:text="tempo : " />
+
+    <SeekBar
+        android:id="@+id/seekBarTempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNoOfNotes"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tempo" />
 
 
 </RelativeLayout>
